@@ -2,7 +2,7 @@
 FROM alpine:latest
 
 #Install dependencies (Open JDK 11 and Maven)
-RUN apk --n0-cache and openjdk11 maven
+RUN apk --no-cache add openjdk11 maven
 
 # Set the working directory inside the container
 WORKDIR /app
